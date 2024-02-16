@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../image/bg.jpg);
+}
+a{
+    color: #A6A6A6;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.tophead{
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 52px;
+    text-shadow: 1px 1px 2px #fff;
+}
+.menubar{
+    width: 1200px;
+    height: 58px;
+    background: #fff;
+    margin: auto;
+    border-radius: 5px;
+}
+.menubar > ul{
+    padding: 0px;
+}
+.menubar > ul > li {
+    list-style: none;
+    line-height: 55px;
+}
+.menubar > ul > li > a{
+    padding: 25px;
+    height: 50px;
+    font-size: 0.8rem;
+}
+.menu1{
+    clear: both;
+    position: relative;
+}
+.fl{
+    float: left;
+    border-right: 1px solid #D9D9D9;
+}
+.fr{
+    float: right;
+    border-left: 1px solid #D9D9D9;
+}
+ .menu1 > li:nth-child(2) > a::after{
+    content: "▼";
+    font-size: 0.5rem;
+}
+.submenu{
+    position: absolute;
+    width: 225px;
+    background: #fff;
+    top: 63px;
+    left: 103px;
+    border-radius: 0px 5px 5px 5px;
+}
+.submenu > li > a{
+    display: block;
+    font-size: 0.8rem;
+    height: 49px;
+    border-bottom: 1px solid #D9D9D9;
+    line-height: 49px;
+    padding-left: 30px;
+}
+.submenu{
+    padding: 0px;
+    display: none;
+    clear: both;
+    position: absolute;
+}
+.active{
+    color: #2b82d9;
+}
+li:hover{
+    color: #2b82d9;
+    background: #f6f3f3;
+}
+.menu1 > li:hover .submenu{
+    display: block;
+}
+.menu1 > li:nth-child(2):hover {
+    padding-bottom: 5px;
+}
+.submenu1 > li:nth-child(1) > a::after{
+    content: "▼";
+    float: right;
+    padding-right: 15px;
+    font-size: 0.5rem;
+    color: #2b82d9;
+}
+.submenu1 > li:nth-child(3) > a::after{
+    content: "▼";
+    float: right;
+    padding-right: 15px;
+    font-size: 0.5rem;
+}
+.subsubmenu{
+    position:absolute;
+    top: 28px;
+    left: 200px;
+    display: none !important;
+}
+.submenu > li:hover .subsubmenu{
+    display: block !important;
+    color: #2b82d9 !important;
+}
+.subsubsubmenu{
+    position: absolute;
+    top: 129px;
+}
+li a:hover{
+    color: #2b82d9;
+}
